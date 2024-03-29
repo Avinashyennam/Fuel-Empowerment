@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;600;700&family=Poppins:wght@200;400;500;700&display=swap");
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0;
+  margin: 0 auto;
+  width: 90%;
+}
+.left {
+  display: flex;
+  align-items: end;
+}
+.left img{
+    width: 230px;
+    height: 149px;
+}
+.navbar .right{
+    padding:  10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: relative;
+    top:55px;
+}
+.navbar .right a {
+  text-decoration: none;
+  color: white;
+  font-size: 27px;
+  font-weight: 400;
+  color: black;
+}
+
+.navbar .right a button{
+    border: none;
+    background-color: white;
+    font-size: 20px;
+}
+.navbar .right a:hover {
+  text-decoration: underline;
+  color: black;
+}
+h1 {
+  padding: 0;
+  margin: 0;
+}
+.right {
+  width: 25rem;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  font-size: 1rem !important;
+}
+.bar1,
+.bar2,
+.bar3 {
+  background-color: black;
+  height: 4px;
+  width: 36px;
+  margin-top: 8px;
+  border-radius: 20px;
+}
+/* .mobilenavbar {
+  width: 60px;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: -120px;
+  padding: 1rem;
+  transition: transform 0.5s;
+}
+.mobilenavbar a {
+  text-decoration: none;
+  color: black;
+  margin: 1rem 0;
+}
+.mobilenavbar img {
+  width: 24px;
+  height: 24px;
+}
+.mobilenavbar a:hover {
+  text-decoration: underline;
+  color: black;
+} */
+.opennavmob {
+  transform: translateX(-120px);
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+@media only screen and (max-width: 1100px) {
+  .navbar {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 16px 24px;
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: white;
+    width: 100%;
+    color: black;
+  }
+  .hamburger {
+    display: block;
+  }
+  .navbar .right {
+    display: none;
+  }
+}
+footer {
+  text-align: center;
+  padding: 4rem;
+}
+.bar1as {
+  animation: bar1a 0.2s forwards;
+}
+.bar2as {
+  animation: fadebar2 0.1s forwards;
+}
+.bar3as {
+  animation: bar2a 0.2s forwards;
+}
+@keyframes bar1a {
+  from {
+    tranform: rotate(0);
+  }
+  to {
+    transform: rotate(45deg) translate(5px, 13px);
+  }
+}
+@keyframes bar2a {
+  from {
+    tranform: rotate(0);
+  }
+  to {
+    transform: rotate(-46deg) translate(4px, -12px);
+  }
+}
+@keyframes fadebar2 {
+  from {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  to {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+}
+body {
+  background-image: url("https://images.unsplash.com/photo-1560713269-4e9527797b8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80");
+  background-size: cover;
+  height: 100vh;
+}
+
+.one {
+  color: white;
+  margin-bottom: 35px;
+}
+.one a {
+  color: white;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.text {
+  font-weight: 150;
+  font-size: 38px;
+  color: #fafafa;
+}
+
+.dud {
+  color: #757575;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#registering{
+    background-color: white;
+    width:400px;
+    margin: auto;
+    height: 350px;
+    border-radius: 10px;
+    border: 1px solid white;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    row-gap: 10px;
+    display: none;
+}
+#registering .heading{
+    margin-top: 10px;
+}
+.prompting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+.prompting input{
+    width:250px;
+    height: 30px;
+    border-radius: 5px;
+}
+.prompting button{
+    background-color: black;
+    color: white;
+    width:110px;
+    height: 37px;
+    border-radius: 5px;
+}
+
+#registering .sign-up{
+    margin-top: 30px;
+    row-gap: 4px;
+}
+
+.location{
+    background-color: aqua;
+    width: 100px;
+            height: 200px;
+}

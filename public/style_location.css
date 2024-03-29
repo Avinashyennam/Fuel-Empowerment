@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../location_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    margin: 0 auto;
+    width: 90%;
+}
+.left {
+    display: flex;
+    align-items: end;
+}
+.left img{
+        width: 230px;
+        height: 149px;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.location{
+    
+}
+#registering{
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    width:400px;
+    margin: auto;
+    height: 350px;
+    border-radius: 10px;
+    border: 1px solid white;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    row-gap: 10px;
+    display: flex;
+}
+#registering .heading{
+    margin-top: 10px;
+    color: white;
+}
+.prompting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+.prompting input{
+    width:250px;
+    height: 30px;
+    border-radius: 5px;
+}
+.prompting button{
+    background-color: black;
+    color: white;
+    width:110px;
+    height: 37px;
+    border-radius: 5px;
+}
+#registering .sign-up{
+    margin-top: 30px;
+    row-gap: 4px;
+}

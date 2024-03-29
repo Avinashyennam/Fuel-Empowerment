@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fuel type</title>
+    <link rel="stylesheet" href="../public/style_type.css">  
+</head>
+<body>
+    <header class="navbar">
+        <div class="left">
+          <img src="./fuem-low-resolution-logo-color-on-transparent-background.png">
+        </div>
+    </header>
+    <div class="container">
+        <div class="bar bar-grey">
+          <div class="option">PETROL</div>
+          <div class="option">DIESEL</div>
+          <div class="option">CNG</div>
+        </div>
+        <div class="bar-outer">
+          <div class="bar bar-purple">
+            <div class="option">PETROL</div>
+            <div class="option">DIESEL</div>
+            <div class="option">CNG</div>
+          </div>
+        </div>
+    </div>
+    <div class="container2">
+            <div class="radiobtn">
+                <div class="input-container">
+                    <input type="radio" name="virat" id="rad1">
+                    <div class="radio-title">
+                        <lable for="rad1">HP</lable>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <input type="radio" name="virat" id="rad2">
+                    <div class="radio-title">
+                        <lable for="rad2">Bharat Petroleum</lable>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <input type="radio" name="virat" id="rad3">
+                    <div class="radio-title">
+                        <lable for="rad3">Indian Oil</lable>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <a href="./info.html" target="_blank"><button>SUBMIT</button></a>
+
+</body>
+<script>
+    const barOuter = document.querySelector(".bar-outer");
+    const options = document.querySelectorAll(".bar-grey .option");
+    let current = 1;
+    options.forEach((option, i) => (option.index = i + 1));
+    options.forEach(option =>
+                    option.addEventListener("click", function() {
+    barOuter.className = "bar-outer";
+    barOuter.classList.add(`pos${option.index}`);
+    if (option.index > current) {
+        barOuter.classList.add("right");
+    } else if (option.index < current) {
+        barOuter.classList.add("left");
+    }
+    current = option.index;
+    }));
+
+</script>
+</html>
+
+
+
+
+
